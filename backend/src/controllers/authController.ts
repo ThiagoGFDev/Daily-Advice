@@ -2,7 +2,7 @@ import type { Request, Response } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { z } from 'zod';
-import { readDatabase, writeDatabase } from '../database.js'; // Lembrar do .js
+import { readDatabase, writeDatabase } from '../database.js';
 import type { User } from '../models/types.js';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'fallback_secret_key_123';
